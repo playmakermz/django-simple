@@ -19,7 +19,12 @@
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Example textarea</label>
             <textarea class="form-control" name="title" id="id_title" rows="3"></textarea>
+		<-- textarea same as django form 
+		you can see the different 
+-->
+{{ form.title }}
 
+<-- just add (name="title" id='id_title' ) and your input will be connected with django -->
             <input type="submit" value="add">
 
         </div>
