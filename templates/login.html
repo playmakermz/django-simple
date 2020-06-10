@@ -1,0 +1,24 @@
+<html>
+  <head>
+  
+  </head>
+
+  <body>
+    <form action="" method="POST">
+    {% csrf_token %}
+    <input type="text" required id="id_username" name="username" placeholder="username">
+    <p> username input </p>
+    <br>
+    <input type="password" id="id_password" name="password" placeholder="password">
+    <p> password input </p>
+    <br>
+
+
+    <center> 
+    
+    <input type="submit" value="login">
+    </center>
+
+    </form>
+  </body>
+</html>
