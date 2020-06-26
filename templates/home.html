@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+
+        <center>
+            <a href="/">refresh</a>
+        </center>
+        <h5>example = book </h5>
+        <input type="text" name="title" id="id_title" for="id_title" placeholder="search box">
+        <!-- <input type="text" name="title" id="id_title" placeholder="text"> -->
+
+        <input type="submit" value="add">
+
+    </form>
+
+    {% for Note in note %}
+    {{ Note.title}} <br>
+    {% endfor %}
+
+</body>
+
+</html>
