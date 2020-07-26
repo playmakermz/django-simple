@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <title>choice</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-flu">
+        <div class="container">
+
+        </div>
+    </div>
+    <!-- jumbotron iklan -->
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+
+            <h1 class="text">Do you agree with us?</h1>
+            <br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+                    aria-valuenow="{{note}}" aria-valuemin="0" aria-valuemax="100" style="width: {{note}} %">
+                    {{note}}
+                </div>
+                <!-- semua angka 80 di ubah -->
+            </div>
+            <h5>{{note}}</h5>
+        </div>
+    </div>
+    <!-- untuk jumbotron 2 -->
+
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">
+                        <div class="alert alert-success" role="alert">
+                            if you agree, send the message below
+                        </div>
+                    </label>
+                    <textarea class="form-control" id="id_title" type="text" name='title' rows="3"></textarea>
+                </div>
+                <p class="text-right">
+                    <input type="submit" value="add" class="btn btn-success">
+
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- untuk jumbotron 3 -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
