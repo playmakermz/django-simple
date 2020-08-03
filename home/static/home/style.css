@@ -1,0 +1,100 @@
+.jumbotron-fluid1 {
+    background-color: #222831;
+    color: #eeeeee;
+    margin-top: -20px;
+    margin-left: -83px;
+    margin-right: auto;
+    width: 1277px;
+    height: 500px;
+}
+
+.jumbotron-fluid2 {
+    background-color: #393e46;
+    color: #eeeeee;
+    margin-top: -32px;
+    margin-left: -83px;
+    margin-right: auto;
+    width: 1277px;
+    height: 300px;
+}
+
+.jumbotron-fluid3 {
+    background-color: #00adb5;
+    color: #eeeeee;
+    margin-top: -32px;
+    margin-left: -83px;
+    margin-right: auto;
+    width: 1277px;
+    height: 300px;
+}
+
+.jumbotron-fluid4 {
+    background-color: #eeeeee;
+    margin-top: -32px;
+    margin-left: -83px;
+    margin-right: auto;
+    width: 1277px;
+    height: auto;
+}
+
+/* ini untuk jumbotron */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif+Caption');
+
+#text {
+    font-family: "PT Serif Caption", serif;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-align: center;
+    font-size: 100px;
+
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+#text2 {
+    font-family: "PT Serif Caption", serif;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-align: center;
+    font-size: 40px;
+
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+/* ini untuk text */
+
+
+/* ini untuk HP */
+@media (max-width: 767.98px) {
+    #text {
+        font-size: 50px;
+    }
+
+    .jumbotron-fluid1 {
+        margin-top: auto;
+        margin-left: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .jumbotron-fluid2 {
+        margin-top: -32px;
+        margin-left: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .jumbotron-fluid3 {
+        margin-top: -32px;
+        margin-left: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .jumbotron-fluid4 {
+        margin-top: -32px;
+        margin-left: auto;
+        width: auto;
+        height: auto;
+    }
+}

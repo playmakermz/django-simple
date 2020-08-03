@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>{{ title }}</title>
+
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+  <link rel="stylesheet" href="{% static "hitung/css/starter-template.css" %}">
+  <!-- Bootstrap core CSS -->
+  <link href="{% static "hitung/css/bootstrap.css" %}" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+
+  <link rel="stylesheet" href="{% static "hitung/style.css" %}">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="{% url 'home' %}">Homepage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="/power">Pangkat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/division">Akar</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Social Meida</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a href="https://twitter.com/DrawPalace" class="dropdown-item">twitter</a>
+            <a href="https://github.com/playmakermz" class="dropdown-item">Github</a>
+            <a href="https://www.linkedin.com/in/alif-angga-29b5bb1b2/" class="dropdown-item">linkedin</a>
+            <a href="https://www.instagram.com/drawpalace123/?hl=en" class="dropdown-item">instagram</a>
+
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <main role="main" class="container">
+
+    <div class="jumbotron jumbotron-fluid1">
+      <div class="container">
+        <h1 class="display-4" id="text">{{ judul }}</h1>
+        <form method="post">
+          {% csrf_token %}
+
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="X" required name="x">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Y" required name="y">
+            </div>
+          </div>
+
+          <input type="submit" value="Hitung">
+        </form>
+        <br><br>
+        <input class=" form-control" type="text" placeholder="{{ fin }}" readonly>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- ini untuk jumbotron 3 -->
+    <div class="jumbotron jumbotron-fluid4">
+      <div class="container">
+        <p class="lead text-center">My Social Media.</p>
+        <a href="https://twitter.com/DrawPalace" class="btn btn-outline-primary">twitter</a>
+        <a href="https://github.com/playmakermz" class="btn btn-outline-secondary">Github</a>
+        <a href="https://www.linkedin.com/in/alif-angga-29b5bb1b2/" class="btn btn-outline-success">linkedin</a>
+        <a href="https://www.instagram.com/drawpalace123/?hl=en" class="btn btn-outline-danger">instagram</a>
+
+
+
+      </div>
+    </div>
+    <!-- ini untuk jumbotron 4 -->
+
+
+  </main><!-- /.container -->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script>
+    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+  </script>
+  <script src="{% static "hitung/js/bootstrap.bundle.js" %}"></script>
+</body>
+
+</html>
