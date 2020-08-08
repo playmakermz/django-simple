@@ -1,5 +1,7 @@
 # drive, upload file
 
+- pip install django
+- pip install django-filter
 - python manage.py makemigrations
 - python manage.py migrate
 - python manage.py createsuperuser
