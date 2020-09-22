@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="/a1">a1</a><br>
+  <a href="/a2">a2</a><br>
+  <a href="/a3">a3</a><br>
+  <a href="/a4">a4</a><br>
+
+  <form action="" method="POST">
+    {% csrf_token %}
+    <input type="text" name="nama" id="id_nama" placeholder="nama"><br>
+    <input type="text" name="pesanan" id="id_pesanan" placeholder="pesanan"><br>
+    <input type="submit" value="pesan sekarang">
+  </form>
+</body>
+
+</html>
