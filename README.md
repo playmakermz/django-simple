@@ -8,3 +8,7 @@
 - python manage.py runserver
 
 open /admin, login, and upload file
+
+## feature 
+
+file upload with filter models
