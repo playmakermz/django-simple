@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+  <!--  -->
+<form action="" method="POST" enctype="multipart/form-data">
+{% csrf_token %}
+<input type="text" name="title" placeholder="title" required><br>
+
+<!-- <input type="text" name="tipe" placeholder="type" required><br> -->
+
+<input type="file" name="myfile" required> <br>
+
+<input type="submit" value="finish">
+</form>
+<!--  -->
+<table>
+  <h1> Index of File </h1>
+{% for Note in note %}
+<tr>
+   <td><a href="{{ Note.myfile.url}}">{{ Note.title }}</a></td>
+   <td>{{ Note.tipe }}</td>
+   <td>{{ Note.ukuran }} kB</td>
+  <td>{{ Note.created }}</td>
+  <td></td>
+
+ </tr>
+{% endfor %}
+</table>
+
+
+<!--  -->
+</body>
+</html>
