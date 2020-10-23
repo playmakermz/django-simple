@@ -2,6 +2,13 @@
 very simple
 django file upload, without using django.forms
 
+## Feature
+show file type
+show name
+show size file
+
+***
+
 manual file upload for django
 ```
 python manage.py migrate
