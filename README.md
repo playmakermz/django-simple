@@ -3,9 +3,11 @@ very simple
 django file upload, without using django.forms
 
 ## Feature
-show file type
-show name
-show size file
+1)show file type
+
+2)show name
+
+3)show size file
 
 ***
 
