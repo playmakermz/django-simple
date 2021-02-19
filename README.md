@@ -1,6 +1,6 @@
 # django accept-list
 
-!(https://github.com/playmakermz/django-simple/blob/accept_list/photo.png)
+![alt](https://github.com/playmakermz/django-simple/blob/accept_list/photo.png)
 
 ## Cara kerja
 
