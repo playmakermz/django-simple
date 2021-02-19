@@ -4,7 +4,7 @@ R = Read
 U = update
 D = delete
 
-![image][Screenshot from 2021-02-18 21-28-47.png]
+![image](https://github.com/playmakermz/django-simple/blob/CRUD/Screenshot%20from%202021-02-18%2021-28-47.png)
 
 ### how to use
 ```
