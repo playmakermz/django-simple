@@ -1,5 +1,7 @@
 # drive, upload file
 
+![image](https://github.com/playmakermz/django-simple/blob/drive/screen.jpg)
+
 - pip install django
 - pip install django-filter
 - python manage.py makemigrations
