@@ -2,6 +2,9 @@
 very simple
 django file upload, without using django.forms
 
+
+![image](photo.png)
+
 ## Feature
 1)show file type
 
