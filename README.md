@@ -4,6 +4,8 @@ R = Read
 U = update
 D = delete
 
+![image][Screenshot from 2021-02-18 21-28-47.png]
+
 ### how to use
 ```
 $ python manage.py migrate
