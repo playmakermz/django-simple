@@ -1,5 +1,6 @@
 ## Online shop, using django
 
+![image](image.png)
 ```
 pip install -r requirements.txt
 python manage.py makemigrations
