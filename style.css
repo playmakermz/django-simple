@@ -1,0 +1,31 @@
+/* Atur css untuk perangkat handphone terlebih dahulu */
+body { background-color:#FBC6A4; }
+/* aturan untuk body css */
+.page-box { background-color: #F4A9A8; padding: 1em; }
+.page-box > h2 { text-align: center;}
+/* ini untuk are atas bnox 01 */
+.page-box-01 { display:flex; background-color:#F4A9A8; flex-direction:column; padding:1em; }
+/* aturan untuk page box flex container */
+.page-box-01-item { padding:1em; }
+/* aturan untuk box 01 item */
+.page-box-02-normal { background-color: #F4A9A8; padding: 1em; }
+.page-box-02-normal > h2 { text-align: center;}
+/* ini untuk aturan di atas box 02 */
+.page-box-02 { display:flex; background-color:#F4A9A8; flex-direction:column; padding:1em; }
+/* page box 02 container */
+.page-box-02-item { padding:1em; background-color:#CE97B0; }
+/* page box 02 item */
+
+
+/* Area Komputer */
+@media (min-width: 1200px) { 
+main { padding: 9em;}
+/* aturan Main css komputer */
+.page-box-01 { flex-direction:row; }
+
+
+
+/* akhir */
+/* akhir dari css komputer */
+}
+

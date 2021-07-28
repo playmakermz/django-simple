@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>HomePage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+<div class='page-box'>
+  <p id='hasil'></p>
+<h2>Laporan bacaan buku</h2>
+
+<div class="page-box-01">
+<form id="form-task">
+
+<input type="text" id="title" placeholder='Judul Buku'> 
+<input id="author" type="text" placeholder='Penulis buku'>
+<input id="year" type="number" placeholder='Tahun terbit'>
+<input type="text" id="description" placeholder='deskripsi buku'>
+<label for="">Sudah Dibaca</label>
+<input id="isComplete" type="checkbox" value='sudah dibaca'>
+<button class="">Store Data</button>
+
+</form>
+</div>
+
+
+<div class="page-box-02-normal">
+<h2> Buku Yang telah di baca </h2>
+<div id="task-empty"></div>
+</div>
+<br>
+
+<!-- box sudah dibaca END -->
+
+<div class="page-box-02-normal">
+<h2> Buku Yang Belum dibaca di baca </h2>
+<div id="task-view"></div>
+</div>
+
+
+
+</main>
+<script src='script.js'></script>
+<script src='move.js'></script>
+<script src='try.js'></script>
+</body>
+
+</html>

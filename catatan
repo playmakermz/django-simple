@@ -1,0 +1,25 @@
+untuk update plugins
+:SPUpdate
+
+ini untuk project HTML: 
+Membuat Perpustakaan Online dengan javascript
+
+Apa yang harus dilakukan adalah:
+interface menambahkan buku: 
+1. input Judul buku
+2. input Penulis buku
+3. input Tahun buku 
+4. sudah dibaca atau belum
+5. Id buku ( dibuat otomatis )
+6. simpan semua data tersebut 
+
+ada dua interface menampilkan buku 
+1. buku yang belum dibaca 
+2. buku yang sudah dibaca 
+3. buku harus bisa berpindah interface, yang belum pindah ke yang sudah 
+
+Manipulasi data 
+1. buku harus bisa dihapus
+
+penyimpanan data 
+1. buku harus tersimpan di localstorage
